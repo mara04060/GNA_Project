@@ -118,10 +118,10 @@ public class StaxWrite {
         this.createNode(eventWriter, "C_DOC_CRTDATE", this.declar.getDeclarBody().getcDocCrtDate());
         this.createNode(eventWriter, "C_DOC_CRTTIME", this.declar.getDeclarBody().getcDocCrtTime());
         this.createNode(eventWriter, "C_DOC_QTREC", this.declar.getDeclarBody().getcDocQtRec());
-        Iterator var7 = this.declar.getDeclarBody().getRows().iterator();
+        Iterator iterator = this.declar.getDeclarBody().getRows().iterator();
 
-        while(var7.hasNext()) {
-            Rows rows = (Rows)var7.next();
+        while(iterator.hasNext()) {
+            Rows rows = (Rows)iterator.next();
             eventWriter.add(eventFactory.createStartElement("", "", "ROWS"));
             eventWriter.add(eventFactory.createAttribute("ROWNUM", rows.getRownum()));
             eventWriter.add(end);

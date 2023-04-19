@@ -191,10 +191,10 @@ public class Stax {
 
                 return declar;
             }
-        } catch (FileNotFoundException var14) {
-            var14.printStackTrace();
-        } catch (XMLStreamException var15) {
-            var15.printStackTrace();
+        } catch (FileNotFoundException trace) {
+            trace.printStackTrace();
+        } catch (XMLStreamException trace) {
+            trace.printStackTrace();
         }
 
         return declar;

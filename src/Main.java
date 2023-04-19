@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.print(" Введите название файла @F0xxxxx :");
+        System.out.print(" Введите название файла @F0xxxxx.XML :");
         Scanner scanner = new Scanner(System.in);
         String file = scanner.nextLine();
         Stax staxExample = new Stax();
